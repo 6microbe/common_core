@@ -1,26 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: microbe <microbe@42student.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/14 18:03:04 by microbe           #+#    #+#             */
-/*   Updated: 2026/09/14 18:03:04 by microbe          ###   ########.fr       */
+/*   Created: 2026/09/14 18:03:37 by microbe           #+#    #+#             */
+/*   Updated: 2026/09/14 18:03:37 by microbe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-#include <stdio.h>
+#include <unistd.h>
 */
-int	ft_isalpha(int c)
+
+int	ft_isdigit(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+	if (c >= '0' && c <= '9')
 		return (1);
 	return (0);
 }
+
 /*
 int	main(void)
 {
-	printf("%d\n", ft_isalpha('A'));
-}*/
+	write(1, &ft_isdigit('5'), 1);
+}
+*/

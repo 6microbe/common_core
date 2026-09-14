@@ -1,26 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: microbe <microbe@42student.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/14 18:03:04 by microbe           #+#    #+#             */
-/*   Updated: 2026/09/14 18:03:04 by microbe          ###   ########.fr       */
+/*   Created: 2026/09/14 18:17:27 by microbe           #+#    #+#             */
+/*   Updated: 2026/09/14 18:17:27 by microbe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-*/
-int	ft_isalpha(int c)
+int	ft_strle,n(const char *s)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-		return (1);
-	return (0);
+	int	i;
+
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
-/*
-int	main(void)
-{
-	printf("%d\n", ft_isalpha('A'));
-}*/
